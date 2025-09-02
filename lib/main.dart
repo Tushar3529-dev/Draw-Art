@@ -1,5 +1,3 @@
-
-
 import 'package:drawing_app/feature/draw/model/drawing.dart';
 import 'package:drawing_app/feature/draw/model/stroke.dart';
 import 'package:drawing_app/feature/draw/model/offset.dart';
@@ -7,10 +5,14 @@ import 'package:drawing_app/feature/draw/presentation/darw_page.dart';
 import 'package:drawing_app/feature/home/presentation/home_screen.dart';
 import 'package:drawing_app/feature/splash/presentation/splash_screen.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
+
+  // Hide both status bar (top) and navigation bar (bottom)
+  SystemChrome.setEnabledSystemUIMode(SystemUiMode.immersiveSticky);
 
   await Hive.initFlutter();
 
