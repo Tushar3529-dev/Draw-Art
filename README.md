@@ -1,16 +1,34 @@
-# drawing_app
+# 🎨 Flutter Drawing App
 
-A new Flutter project.
+A simple and efficient Flutter drawing app that lets users **draw**, **save**, and **edit** their drawings later. All data is stored locally using **Hive**, providing fast and lightweight storage without the need for a backend.
 
-## Getting Started
+---
 
-This project is a starting point for a Flutter application.
+## ✨ Features
 
-A few resources to get you started if this is your first Flutter project:
+- 🖌️ Freehand drawing with smooth canvas  
+- 💾 Save your drawings locally  
+- ♻️ Reopen and update saved drawings anytime  
+- ⚡ Fast and persistent local storage using Hive
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+---
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## 🛠️ Tech Stack
+
+- **Flutter** – UI toolkit for building cross-platform apps  
+- **Hive** – Lightweight & blazing fast key-value database  
+- **flutter_hive** – Flutter integration for Hive
+
+---
+
+## 📦 Dependencies
+
+Include the following in your `pubspec.yaml`:
+
+```yaml
+dependencies:
+  flutter:
+    sdk: flutter
+  hive: ^latest
+  hive_flutter: ^latest
+  path_provider: ^latest
